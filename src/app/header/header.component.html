@@ -1,1 +1,38 @@
-<p>header works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Navbar</title>
+    <link rel="stylesheet" href="./header.component.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#" class="logo">
+            <img src="https://marketplace.canva.com/EAFI0FcPups/2/0/1600w/canva-black-elegant-beauty-bar-youtube-channel-logo-Fr68kmgcpCY.jpg" alt="Logo"> 
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+
+<script>
+    function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("nav-active");
+    }
+</script>
+
+</body>
+</html>
