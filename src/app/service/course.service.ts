@@ -8,10 +8,6 @@ export class CourseService {
 
   constructor() { }
 
-  // getAll():String[] {
-  //   return [('defre','hello','hello')]
-  // }
-
   getAll(): Course[] {
     return [
      { id:1,
