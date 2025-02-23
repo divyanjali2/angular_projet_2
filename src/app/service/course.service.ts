@@ -31,4 +31,8 @@ export class CourseService {
       description: 'This course bridges intermediate and advanced concepts with hands-on assignments.' }
     ];
   }
+
+  getCourseDetails(id: number): Course | undefined {
+    return this.getAll().find(course => course.id === id); 
+  }
 }
